@@ -4,7 +4,7 @@
 
 This project demonstrates an Azure Function App that processes blob files from an Azure Storage Account. The function performs the following tasks:
 - **Blob Trigger:** Automatically activates when a file is uploaded to the `input` container.
-- **Data Processing:** Reads the blob content, performs basic CSV Exploratory Data Analysis (EDA) and cleaning (if applicable), and appends `" hello"` to the content.
+- **Data Processing:** Reads the input blob content, performs basic CSV Exploratory Data Analysis (EDA) and cleaning (if applicable), and upload it to the output blob.
 - **Output Binding:** Writes the processed content to the `output` container.
 - **Logging and Monitoring:** Integrated with Application Insights and Azure Monitor to capture logs and telemetry for real-time monitoring and troubleshooting.
 
